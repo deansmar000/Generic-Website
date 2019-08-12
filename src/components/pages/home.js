@@ -1,14 +1,18 @@
 import React from "react";
 
+import Sword from "../../../static/images/Other/Swords.png";
+
 const Home = () => {
   return (
     <div className="homepage-wrapper">
       <div className="hero-section">
-        <div className="top-heading">
-          <h1>SITE NAME</h1>
-        </div>
-        <div className="bottom-heading">
-          <h3>Snapy fraze</h3>
+        <div className="right-side">
+          <div className="top-heading">
+            <h1>SITE NAME</h1>
+          </div>
+          <div className="bottom-heading">
+            <h3>Snapy fraze</h3>
+          </div>
         </div>
       </div>
       <div className="content-box">
