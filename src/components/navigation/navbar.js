@@ -1,0 +1,82 @@
+import React from "react";
+import {
+  BrowserRouter,
+  Switch,
+  NavLink as Link,
+  Route
+} from "react-router-dom";
+
+import Home from "../pages/home";
+import Links from "../pages/link";
+import Contact from "../pages/contact";
+import Login from "../pages/login";
+
+const Navbar = () => {
+  return (
+    <div className="page-container">
+      <BrowserRouter>
+        <div className="navbar-container">
+          <div className="navbar-wrapper">
+            <div className="logo-left-wrapper">
+              <h1>this is where the image goes</h1>
+            </div>
+            <div className="right-side-wrapper">
+              <div className="client-name">
+                <h1>CLIENT NAME</h1>
+              </div>
+              <div className="bottom-wrapper">
+                <div className="links-wrapper">
+                  <div className="link-wrapper">
+                    <Link exact to="/">
+                      HOMEPAGE
+                    </Link>
+                  </div>
+                  <div className="link-wrapper">
+                    <Link to="/link">LINK</Link>
+                  </div>
+                  <div className="link-wrapper">
+                    <Link to="/contact">CONTACT</Link>
+                  </div>
+                  <div className="link-wrapper">
+                    <Link to="/login">LOGIN</Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/link" component={Links} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/login" component={Login} />
+          </Switch>
+
+          <div className="footer-wrapper">
+            <div className="links-wrapper">
+              <div className="link-wrapper">
+                <Link exact to="/">
+                  HOMEPAGE
+                </Link>
+              </div>
+              <div className="link-wrapper">
+                <Link to="/link">LINK</Link>
+              </div>
+              <div className="link-wrapper">
+                <Link to="/contact">CONTACT</Link>
+              </div>
+              <div className="link-wrapper">
+                <Link to="/login">LOGIN</Link>
+              </div>
+            </div>
+            <div className="copyright-wrapper">
+              <h1>COPYRIGHT</h1>
+            </div>
+          </div>
+        </div>
+      </BrowserRouter>
+    </div>
+  );
+};
+
+export default Navbar;

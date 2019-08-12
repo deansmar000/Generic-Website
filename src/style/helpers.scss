@@ -1,0 +1,22 @@
+button {
+  height: 35px;
+  width: 100px;
+  cursor: pointer;
+  border: 2px solid $egyption-blue;
+  border-radius: 5px;
+  outline: none;
+  background-color: $vivid-gerulean;
+  color: ghostwhite;
+  font-size: 1.3em;
+  font-weight: 700;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    background-color: $egyption-blue;
+  }
+
+  &:active {
+    border: 2px solid $eerie-black;
+    outline: none;
+  }
+}

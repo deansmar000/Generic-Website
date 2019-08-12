@@ -1,0 +1,74 @@
+.login-wrapper {
+  height: calc(100vh - 260px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .left-side {
+    height: 100%;
+    width: 50%;
+    background-image: url("../../static/images/Scenery/clouds-dark.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .right-side {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .form {
+      height: 400px;
+      width: 300px;
+      border: 1px solid rgba(100, 104, 130, 0.3);
+      background-color: ghostwhite;
+      box-shadow: 5px 5px 5px 0px rgba(100, 104, 130, 0.3);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+
+      .login-header {
+        height: 70px;
+        width: 250px;
+        margin-bottom: 50px;
+        border-bottom: 2px solid $vivid-gerulean;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+          letter-spacing: 2px;
+        }
+      }
+
+      .login-form {
+        height: 200px;
+        width: 250px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        input {
+          height: 30px;
+          width: 80%;
+          border: 1px solid rgba(100, 104, 130, 0.3);
+          color: $paynes-gray;
+          font-weight: 700;
+          font-size: 1em;
+          letter-spacing: 1px;
+          background-color: $off-white;
+          border-radius: 5px;
+          outline: none;
+        }
+      }
+    }
+  }
+}
