@@ -6,6 +6,8 @@ import {
   Route
 } from "react-router-dom";
 
+import Logo from "../../../static/images/Logos/Ingress_Logo.png";
+
 import Home from "../pages/home";
 import Links from "../pages/link";
 import Contact from "../pages/contact";
@@ -18,7 +20,7 @@ const Navbar = () => {
         <div className="navbar-container">
           <div className="navbar-wrapper">
             <div className="logo-left-wrapper">
-              <h1>this is where the image goes</h1>
+              <img src={Logo} />
             </div>
             <div className="right-side-wrapper">
               <div className="client-name">
