@@ -1,7 +1,5 @@
 import React from "react";
 
-import Sword from "../../../static/images/Other/Swords.png";
-
 const Home = () => {
   return (
     <div className="homepage-wrapper">

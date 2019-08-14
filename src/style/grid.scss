@@ -1,0 +1,140 @@
+.grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+
+  .grid-wrapper {
+    height: 630px;
+    width: 630px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+
+    .item1 {
+      grid-column: 1 / span 2;
+      grid-row: 1 / span 2;
+      max-height: 100%;
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .item-wrapper {
+        height: 95%;
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 5px 5px 10px 0px rgba(100, 104, 130, 1);
+        transition: 0.2s ease-in-out;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
+
+        &:hover {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+
+    .item2 {
+      max-width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .item-wrapper {
+        height: 90%;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 5px 5px 10px 0px rgba(100, 104, 130, 1);
+        transition: 0.2s ease-in-out;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
+
+        &:hover {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 750px) {
+    .grid-wrapper {
+      height: 315px;
+      width: 315px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-gap: 10px;
+
+      .item1 {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+        max-height: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .item-wrapper {
+          height: 95%;
+          width: 95%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: 0.2s ease-in-out;
+
+          img {
+            height: 100%;
+            width: 100%;
+          }
+
+          &:hover {
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+
+      .item2 {
+        max-width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .item-wrapper {
+          height: 90%;
+          width: 90%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: 0.2s ease-in-out;
+
+          img {
+            height: 100%;
+            width: 100%;
+          }
+
+          &:hover {
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -9,7 +9,7 @@ import {
 import Logo from "../../../static/images/Logos/Ingress_Logo.png";
 
 import Home from "../pages/home";
-import Links from "../pages/link";
+import Grid from "../pages/grid";
 import Contact from "../pages/contact";
 import Login from "../pages/login";
 
@@ -34,7 +34,7 @@ const Navbar = () => {
                     </Link>
                   </div>
                   <div className="link-wrapper">
-                    <Link to="/link">LINK</Link>
+                    <Link to="/grid">GRID</Link>
                   </div>
                   <div className="link-wrapper">
                     <Link to="/contact">CONTACT</Link>
@@ -49,7 +49,7 @@ const Navbar = () => {
 
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/link" component={Links} />
+            <Route path="/grid" component={Grid} />
             <Route path="/contact" component={Contact} />
             <Route path="/login" component={Login} />
           </Switch>
@@ -62,7 +62,7 @@ const Navbar = () => {
                 </Link>
               </div>
               <div className="link-wrapper">
-                <Link to="/link">LINK</Link>
+                <Link to="/grid">GRID</Link>
               </div>
               <div className="link-wrapper">
                 <Link to="/contact">CONTACT</Link>
